@@ -1,18 +1,13 @@
-using System.ComponentModel.DataAnnotations;
+// Progress.cs
+using System;
 
-namespace up1.Models;
-
-public class Userinfo
+namespace ProgressTracker.Models
 {
-    [Key]
-    public int Id { get; set; }
-   
-    public required string Name {get; set;}
-
-    public int Gpa {get; set;}
-    public DateTime CreatedDateTime {get; set; } = DateTime.Now;
-
-
-
-    
+    public class Progress
+    {
+        public int Id { get; set; }
+        public string Task { get; set; }
+        public int Completed { get; set; }
+        public DateTime Date { get; set; }
+    }
 }
