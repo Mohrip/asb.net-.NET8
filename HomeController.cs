@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using up1.Models;
 
 namespace up1.Controllers;
-
+//s
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
