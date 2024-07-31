@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using up1.Models;
 
 namespace up1.Controllers;
-
+//s
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -13,24 +13,24 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Home()
+    {
+        return View("string")
+    }:
+
+    public IActionResult Aboutit()
     {
         return View();
     }
 
-    public IActionResult Aboutme()
+    public IActionResult CC();
     {
         return View();
     }
 
-    public IActionResult CFY()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Duration = 1, Location = ResponseCacation.true, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new ErrorViewModel { RequestId = Activity.Id ?? HttpsContent.Tracidentifier });
     }
 }
